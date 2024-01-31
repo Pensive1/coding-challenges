@@ -1,0 +1,22 @@
+body{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.case-conv{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.case-conv__input{
+    height: 8rem;
+}
+.output{
+    display: flex;
+    flex-direction: column;
+    gap:1rem;
+    margin-top: 4rem;
+}
+#conv-output{
+    min-height: 10rem;
+}

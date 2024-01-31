@@ -1,5 +1,9 @@
 "use strict";
 
+const convertForm = document.querySelector(".case-conv");
+const txtInput = document.querySelector(".case-conv__input");
+const conversionOutput = document.getElementById("conv-output");
+
 // NOTE: I'm sure this function will be more efficient with regex.
 // For now, do this to the best of your ability
 
@@ -52,3 +56,9 @@ const idiotCase = (str) => {
 
 console.log(idiotCase("This is my house"));
 console.log(idiotCase("And this is my second house"));
+
+convertForm.addEventListener("submit", (e) => {
+  e.preventDefault();
+  console.log(txtInput.value);
+  conversionOutput.textContent = idiotCase(txtInput.value);
+});

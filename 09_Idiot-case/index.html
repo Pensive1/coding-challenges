@@ -3,33 +3,42 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
     <title>Idiot Case</title>
   </head>
   <body>
     <h1>Idiot Case</h1>
     <section class="instructions">
-        <p>
-          For a given piece of text, jumble each letter between upper or lowercase
-        </p>
-        <p><strong>Example: </strong>HeLlO wOrLD</p>
-        <p>
-            <h4>Rules</h4>
-            <ol>
-                <li>The start of the sentence should start with a capital letter</li>
-                <li>If the previous word was lowercase, convert it to uppercase. And vice-versa.</li>
-            </ol>
-        </p>
+      <p>
+        For a given piece of text, jumble each letter between upper or lowercase
+      </p>
+      <p><strong>Example: </strong>HeLlO wOrLD</p>
+      <section class="rules">
+        <h4>Rules</h4>
+        <ol>
+          <li>The start of the sentence should start with a capital letter</li>
+          <li>
+            If the previous word was lowercase, convert it to uppercase. And
+            vice-versa.
+          </li>
+        </ol>
+      </section>
     </section>
     <section class="conversion">
-        <form action="" class="case-conv">
-            <label for="txt-input" class="case-conv__label">Input</label>
-            <input class="case-conv__input" type="text" id="txt-input" name="txtInput" />
-        </form>
-        <p>
-            <label for="conv-output">Output</label>
-            <textarea id="conv-output" name="convOutput"></textarea>
-        </p>
-        <script src="./script.js"></script>
-          </body>
+      <form action="" class="case-conv">
+        <label for="txt-input" class="case-conv__label">Input</label>
+        <textarea
+          class="case-conv__input"
+          id="txt-input"
+          name="txtInput"
+        ></textarea>
+        <button type="submit">Convert</button>
+      </form>
+      <section class="output">
+        <label for="conv-output">Output</label>
+        <textarea id="conv-output" name="convOutput" readonly></textarea>
+      </section>
+      <script src="./script.js"></script>
     </section>
+  </body>
 </html>
