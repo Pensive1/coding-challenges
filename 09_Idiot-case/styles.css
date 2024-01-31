@@ -11,11 +11,21 @@ body{
 .case-conv__input{
     height: 8rem;
 }
+.submit-btn{
+    height: 40px;
+    width: 30%;
+}
 .output{
     display: flex;
     flex-direction: column;
     gap:1rem;
     margin-top: 4rem;
+}
+
+.case-conv__input, #conv-output{
+    width: 60%;
+    font-family:arial, sans-serif;
+    font-size: 1rem;
 }
 #conv-output{
     min-height: 10rem;

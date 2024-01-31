@@ -50,8 +50,6 @@ const idiotCase = (str) => {
     }
   }
   return output.join("");
-
-  return jumblestrArr(strArr);
 };
 
 console.log(idiotCase("This is my house"));
