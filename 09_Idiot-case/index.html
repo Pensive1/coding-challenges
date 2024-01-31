@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Idiot Case</title>
+  </head>
+  <body>
+    <h1>Idiot Case</h1>
+    <section class="instructions">
+        <p>
+          For a given piece of text, jumble each letter between upper or lowercase
+        </p>
+        <p><strong>Example: </strong>HeLlO wOrLD</p>
+        <p>
+            <h4>Rules</h4>
+            <ol>
+                <li>The start of the sentence should start with a capital letter</li>
+                <li>If the previous word was lowercase, convert it to uppercase. And vice-versa.</li>
+            </ol>
+        </p>
+    </section>
+    <section class="conversion">
+        <form action="" class="case-conv">
+            <label for="txt-input" class="case-conv__label">Input</label>
+            <input class="case-conv__input" type="text" id="txt-input" name="txtInput" />
+        </form>
+        <p>
+            <label for="conv-output">Output</label>
+            <textarea id="conv-output" name="convOutput"></textarea>
+        </p>
+        <script src="./script.js"></script>
+          </body>
+    </section>
+</html>
