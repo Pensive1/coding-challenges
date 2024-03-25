@@ -7,7 +7,7 @@ const detailedAge = (day, month, year) => {
   const monthMs = yearMs / 12;
   const dayMs = 1000 * 60 * 60 * 24;
 
-  const yearDiff = Math.floor(dateDiff / yearMs);
+  const yearDiff = Math.floor(Math.abs(dateDiff / yearMs));
   const monthDiff = Math.floor((dateDiff % yearMs) / monthMs);
   const dayDiff = Math.floor((dateDiff % monthMs) / dayMs);
 
